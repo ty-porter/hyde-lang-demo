@@ -8,4 +8,4 @@ def index():
     return render_hyde_template('index.hy')
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(threaded=True, port=5000)

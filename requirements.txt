@@ -1,0 +1,15 @@
+click==8.0.1
+commando==1.0.0
+Flask==2.0.1
+fswrap==1.0.0
+gunicorn==20.1.0
+hyde-lang==0.0.1
+itsdangerous==2.0.1
+Jinja2==3.0.1
+Markdown==2.6.11
+MarkupSafe==0.23
+Pygments==2.10.0
+PyYAML==3.13
+smartypants==1.8.6
+typogrify==2.0.7
+Werkzeug==2.0.1

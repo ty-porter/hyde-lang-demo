@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Hyde';
+  src: url('../fonts/Hyde-Regular.otf');
+}
+
+body {
+  font-family: 'Hyde';
+  color: #2c3e50;
+  margin: 0;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+  width: 75%;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+div.container {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+div.header-container, div.footer-container {
+  background-color: #2c3e50;
+  margin: 0;
+}
+
+div.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+div.img-container {
+  padding: 8px;
+}
+
+span.inline-code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  white-space: nowrap;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header-title {
+  padding: 8px;
+}
+
+.text-reverse {
+  color: white;
+}
+
+.article-title {
+  color: #e74c3c;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+.img-xlarge {
+  width: 100%;
+  max-width: 750px;
+}
+
+.img-small {
+  width: 100%;
+  max-width: 128px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}

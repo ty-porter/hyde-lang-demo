@@ -1,1 +1,1 @@
-hyde-lang==0.0.5
+hyde-lang==0.0.6

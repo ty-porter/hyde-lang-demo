@@ -1,7 +1,6 @@
 load "lib/app.hy";
 load "lib/router.hy";
 load "lib/utils/html_generator.hy";
-load "lib/utils/array.hy";
 
 # Route loading
 var router = Router();

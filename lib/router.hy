@@ -4,7 +4,6 @@ class Router {
   }
 
   defineRoute(renderer, path, name) {
-    var tempRouteContainer = Array(1);
     var route = Map();
 
     # Insert a subset of route data into applicationTemplate
@@ -15,9 +14,7 @@ class Router {
     route.set("template_location", renderer.templateLocation);
     route.set("renderer", renderer);
 
-    tempRouteContainer.set(0, route);
-
-    var combinedRoutes = arrayConcat(this.routes, tempRouteContainer);
+    var combinedRoutes = arrayAppend(this.routes, route);
     this.routes = combinedRoutes;
   }
 

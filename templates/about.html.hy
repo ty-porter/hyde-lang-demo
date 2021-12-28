@@ -131,7 +131,7 @@ class _renderer < TemplateRenderer {
           ) +
           img(None, "static/images/hyde_html.png") +
           p(None, "As you can " + i(None, "clearly") + " see, this is quite horrendous. Hyde has very little in the form of string manipulation functions, so this is abuse of " +
-            "classes taken to the max. As mentioned before, the " + span("inline-code", "HTMLGenerator") + " class injects its functions direclty into the global namespace " +
+            "classes taken to the max. As mentioned before, the " + span("inline-code", "HTMLGenerator") + " class injects its functions directly into the global namespace " +
             "(because there are no modules to speak of), where the template renderers pick them up and use it to generate stringified HTML."
           ) +
           p(None, "What this means for each tag, you're effectively just calling an absolutely massive chain of global functions and concatenating their output at each level.") +

@@ -51,17 +51,4 @@ class _template {
 
     return div("navbar", links);
   }
-
-  wrap(content) {
-    return html(
-      head() + 
-      body(
-        div("app-container",
-          header() +
-          content + 
-          footer()
-        )
-      )
-    );
-  }
 }

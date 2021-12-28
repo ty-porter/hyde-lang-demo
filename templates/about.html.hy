@@ -8,6 +8,7 @@ class _renderer < TemplateRenderer {
 
   renderContent() {
     return this.wrapContent(
+      "Hyde - About",
       div("title-container container",
         h1("article-title",
           "About Hyde Lang"

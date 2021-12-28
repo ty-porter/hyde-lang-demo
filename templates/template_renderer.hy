@@ -1,7 +1,7 @@
 class TemplateRenderer {
-  wrapContent(content) {
+  wrapContent(title, content) {
     return html(
-      head() + 
+      head(title) + 
       body(
         applicationTemplate.header() +
         content +

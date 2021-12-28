@@ -7,6 +7,7 @@ class _renderer < TemplateRenderer {
 
   renderContent() {
     return this.wrapContent(
+      "Hyde Programming Language",
       div("title-container container",
         h1("article-title",
           "Hello World!"

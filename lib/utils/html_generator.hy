@@ -1,16 +1,17 @@
 class HTMLGenerator {
   init() {
     # Tag types
-    this.aTag    = "a";
-    this.divTag  = "div";
-    this.h1Tag   = "h1";
-    this.h2Tag   = "h2";
-    this.iTag    = "i";
-    this.imgTag  = "img";
-    this.liTag   = "li";
-    this.pTag    = "p";
-    this.spanTag = "span";
-    this.ulTag   = "ul";
+    this.aTag     = "a";
+    this.divTag   = "div";
+    this.h1Tag    = "h1";
+    this.h2Tag    = "h2";
+    this.iTag     = "i";
+    this.imgTag   = "img";
+    this.liTag    = "li";
+    this.pTag     = "p";
+    this.spanTag  = "span";
+    this.titleTag = "title";
+    this.ulTag    = "ul";
 
     # Static tags
     this.hr      = "<hr />";
@@ -34,8 +35,8 @@ class HTMLGenerator {
     return this.wrapClass(this.divTag, text, htmlClass);
   }
 
-  head() {
-    return this.wrapAttributes("head", this.css() + " " + this.favIcon(), None);
+  head(title) {
+    return this.wrapAttributes("head", this.css() + " " + this.favIcon() + " " + this.title(title), None);
   }
 
   h1(htmlClass, text) {
@@ -80,6 +81,10 @@ class HTMLGenerator {
 
   span(htmlClass, text) {
     return this.wrapClass(this.spanTag, text, htmlClass);
+  }
+
+  title(text) {
+    return this.wrapAttributes(this.titleTag, text, None);
   }
 
   ul(htmlClass, text) {
